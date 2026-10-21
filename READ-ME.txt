@@ -1,0 +1,26 @@
+AFRICAN PRIDE WEBSITE  (multi-page, no backend)
+
+OPEN IT
+  Double-click index.html. Works offline. Pictures and fonts are inside the folder,
+  so keep the whole folder together (or share the whole zip).
+
+PAGES
+  index.html     Home        shop.html      Shop (filters + search)
+  product.html   One page per piece (opened as product.html?id=collar-tee)
+  story.html     Our Story + Lookbook      contact.html   How ordering works
+  checkout.html  Details + order summary, sends the order to WhatsApp
+
+WHERE THINGS ARE
+  css/    one file per job: base, nav, cart, hero, products, sections, pages, responsive, animations
+  js/     data/settings.js  <- YOUR WHATSAPP NUMBER, currency, delivery fee, pickup address
+          data/products.js  <- products, prices, colours (add soldOut:true for SOLD OUT)
+          layout.js (header/footer/cart drawer, shared by all pages), cart.js, products.js,
+          nav.js, slideshow.js, animations.js, main.js, pages/ (one small file per page)
+  images/ photos + logo      fonts/ bundled fonts
+
+FIRST THING TO DO
+  Open js/data/settings.js and fill in:  whatsapp: '2207001234'   (your number, country code, no +)
+  Until you do, Checkout says the WhatsApp number is not set.
+
+PUT IT ONLINE (free): drag this whole folder into Netlify Drop (app.netlify.com/drop)
+or upload it to GitHub Pages / Cloudflare Pages. You get a link to share on WhatsApp.

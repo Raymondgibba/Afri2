@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout.">
+  <title>Checkout | African Pride</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="checkout">
+<main>
+  <section class="section checkout-section"><div class="container" id="checkout-main">
+    <h1 class="page-title">Checkout</h1>
+    <div class="checkout">
+      <div class="checkout__col"><h2 class="checkout__h">Your details</h2>
+        <label class="field">Full name<input id="f-name" autocomplete="name" maxlength="80"></label>
+        <label class="field">Phone number<input id="f-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 7001234" maxlength="20"></label>
+        <div class="seg" id="method"><button type="button" data-method="pickup" class="is-active">Pickup</button><button type="button" data-method="delivery">Delivery</button></div>
+        <p class="hint" id="pickup-info"></p>
+        <label class="field" id="address-field" hidden>Delivery address<textarea id="f-address" rows="2" maxlength="200"></textarea></label>
+        <label class="field">Payment<select id="f-payment"></select></label>
+        <label class="field">Note (optional)<input id="f-note" maxlength="300"></label></div>
+      <div class="checkout__col summary"><h2 class="checkout__h">Order summary</h2><div id="summary"></div>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="btn btn--primary btn--full" id="place-order">Send Order on WhatsApp</button></div>
+    </div></div></section>
+</main>
+<script src="js/data/settings.js"></script>
+<script src="js/data/products.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/pages/checkout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
